@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ZEP Extension",
+  "version": "1.0",
+  "description": "ZEP에서 화면 공유 시 자동 추적, 50분 자동 카메라 끔",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://zep.us/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
